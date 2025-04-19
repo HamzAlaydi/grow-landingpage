@@ -60,7 +60,7 @@ const PortfolioSection = () => {
     },
     {
       id: 6,
-      title: "Watford Tutoring Academy",
+      title: "Watford Tutoring Academy animation",
       category: "web",
       image: Watford,
       description:
