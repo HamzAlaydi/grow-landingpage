@@ -5,6 +5,8 @@ import AdaaPhoto from "../assets/images/2.png";
 import AnmatPhoto from "../assets/images/3.png";
 import MMSPhoto from "../assets/images/4.png";
 import Watford from "../assets/images/5.png";
+import Ayzeen from "../assets/images/6.png";
+import Academic from "../assets/images/7.png";
 
 const PortfolioSection = () => {
   const [activeTab, setActiveTab] = useState("all");
@@ -66,6 +68,22 @@ const PortfolioSection = () => {
       description:
         "Providing exceptional tutoring services in English, Maths, and Science with a team of experienced educators",
       link: "http://watford-tutoring-aca.s3-website.eu-west-2.amazonaws.com/",
+    },
+    {
+      id: 7,
+      title: "Ayzeen",
+      category: "mobile",
+      image: Ayzeen,
+      description: "Online delivery and shopping application",
+      link: "https://apps.apple.com/il/app/ayzeen-%D8%B9%D8%A7%D9%8A%D8%B2%D9%8A%D9%86/id1571568949",
+    },
+    {
+      id: 8,
+      title: "Academic Potential",
+      category: "web",
+      image: Academic,
+      description: "Unlock Your Academic Potential, with our expert tutors.",
+      link: "http://watford-tutoring-aca1.s3-website.eu-west-2.amazonaws.com/",
     },
   ];
 
