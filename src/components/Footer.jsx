@@ -14,9 +14,15 @@ const Footer = () => {
           <div className="footer-content">
             <div className="footer-info">
               <div className="footer-logo">
-                <h2>Grow<span>Software</span></h2>
+                <h2>
+                  Grow<span>Software</span>
+                </h2>
               </div>
-              <p>Empowering businesses with innovative software solutions and expert consulting services to drive growth and digital transformation.</p>
+              <p>
+                Empowering businesses with innovative software solutions and
+                expert consulting services to drive growth and digital
+                transformation.
+              </p>
               <div className="footer-social">
                 <a href="#" className="social-icon">
                   <i className="fab fa-linkedin-in"></i>
@@ -32,34 +38,115 @@ const Footer = () => {
                 </a>
               </div>
             </div>
-            
+
             <div className="footer-links">
               <div className="footer-section">
                 <h3>Quick Links</h3>
                 <ul>
-                  <li><a href="#hero">Home</a></li>
-                  <li><a href="#services">Services</a></li>
-                  <li><a href="#portfolio">Portfolio</a></li>
-                  <li><a href="#contact">Contact</a></li>
+                  <li>
+                    <a href="#hero">Home</a>
+                  </li>
+                  <li>
+                    <a href="#services">Services</a>
+                  </li>
+                  <li>
+                    <a href="#portfolio">Portfolio</a>
+                  </li>
+                  <li>
+                    <a href="#contact">Contact</a>
+                  </li>
                 </ul>
               </div>
-              
+
               <div className="footer-section">
                 <h3>Services</h3>
                 <ul>
-                  <li><a href="#services">Web Development</a></li>
-                  <li><a href="#services">Mobile Apps</a></li>
-                  <li><a href="#services">IT Consulting</a></li>
-                  <li><a href="#services">Digital Transformation</a></li>
+                  <li>
+                    <a href="#services">Web Development</a>
+                  </li>
+                  <li>
+                    <a href="#services">Mobile Apps</a>
+                  </li>
+                  <li>
+                    <a href="#services">IT Consulting</a>
+                  </li>
+                  <li>
+                    <a href="#services">Digital Transformation</a>
+                  </li>
                 </ul>
               </div>
-              
+
+              <div className="footer-section">
+                <h3>IoT & PLC</h3>
+                <ul>
+                  <li>
+                    <a
+                      href="https://poc-plc-software.vercel.app/irrigation"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Smart Irrigation System
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://poc-plc-software.vercel.app/farm-visualization"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Farm Visualization
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="footer-section">
+                <h3>CMS</h3>
+                <ul>
+                  <li>
+                    <a
+                      href="https://palmtect-website-front.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      PalmTech CMS
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://mk-cms.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      MK-CMS
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="footer-section">
+                <h3>Computer Vision</h3>
+                <ul>
+                  <li>
+                    <a
+                      href="https://github.com/HamzAlaydi/production_line_barcode_verifier.git"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Barcode Verifier
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
               <div className="footer-section">
                 <h3>Contact Us</h3>
                 <ul className="contact-list">
                   <li>
                     <FaEnvelope />
-                    <a href="mailto:hamza.alaydi.99@outlook.sa">hamza.alaydi.99@outlook.sa</a>
+                    <a href="mailto:hamza.alaydi.99@outlook.sa">
+                      hamza.alaydi.99@outlook.sa
+                    </a>
                   </li>
                   <li>
                     <FaPhone />
@@ -75,11 +162,13 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      
+
       <div className="footer-bottom">
         <div className="container">
           <div className="copyright">
-            <p>&copy; {currentYear} Grow Software Solutions. All Rights Reserved.</p>
+            <p>
+              &copy; {currentYear} Grow Software Solutions. All Rights Reserved.
+            </p>
           </div>
           <div className="footer-bottom-links">
             <a href="#">Privacy Policy</a>
@@ -87,28 +176,28 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      
+
       <div className="footer-shapes">
-        <motion.div 
+        <motion.div
           className="shape shape-1"
-          animate={{ 
-            y: [0, -15, 0], 
-            rotate: [0, 10, 0]
+          animate={{
+            y: [0, -15, 0],
+            rotate: [0, 10, 0],
           }}
-          transition={{ 
-            repeat: Infinity, 
-            duration: 6
+          transition={{
+            repeat: Infinity,
+            duration: 6,
           }}
         ></motion.div>
-        <motion.div 
+        <motion.div
           className="shape shape-2"
-          animate={{ 
+          animate={{
             y: [0, 15, 0],
-            rotate: [0, -10, 0]
+            rotate: [0, -10, 0],
           }}
-          transition={{ 
+          transition={{
             repeat: Infinity,
-            duration: 7
+            duration: 7,
           }}
         ></motion.div>
       </div>

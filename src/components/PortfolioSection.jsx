@@ -7,6 +7,8 @@ import MMSPhoto from "../assets/images/4.png";
 import Watford from "../assets/images/5.png";
 import Ayzeen from "../assets/images/6.png";
 import Academic from "../assets/images/7.png";
+import IrrigationPhoto from "../assets/images/irrigation.png";
+import FarmVisualizationPhoto from "../assets/images/farm-visulatuin.png";
 
 const PortfolioSection = () => {
   const [activeTab, setActiveTab] = useState("all");
@@ -85,6 +87,54 @@ const PortfolioSection = () => {
       description: "Unlock Your Academic Potential, with our expert tutors.",
       link: "http://watford-tutoring-aca1.s3-website.eu-west-2.amazonaws.com/",
     },
+    {
+      id: 9,
+      title: "Smart Irrigation System",
+      category: "iot",
+      image: IrrigationPhoto,
+      description:
+        "Real-time PLC monitoring system for smart irrigation with weather stations, soil sensors, and automated valve control.",
+      link: "https://poc-plc-software.vercel.app/irrigation",
+    },
+    {
+      id: 10,
+      title: "Farm Visualization Dashboard",
+      category: "iot",
+      image: FarmVisualizationPhoto,
+      description:
+        "Interactive farm visualization system showing pump status, valve controls, and sensor data across 300-acre smart farm.",
+      link: "https://poc-plc-software.vercel.app/farm-visualization",
+    },
+    {
+      id: 11,
+      title: "PalmTech CMS",
+      category: "cms",
+      image:
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop",
+      description:
+        "Comprehensive content management system with modern interface and powerful admin capabilities.",
+      link: "https://palmtect-website-front.vercel.app/",
+    },
+    {
+      id: 12,
+      title: "MK-CMS",
+      category: "cms",
+      image:
+        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop",
+      description:
+        "Advanced content management system with intuitive dashboard and flexible content organization.",
+      link: "https://mk-cms.vercel.app/",
+    },
+    {
+      id: 13,
+      title: "Production Line Barcode Verifier",
+      category: "vision",
+      image:
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=500&h=300&fit=crop",
+      description:
+        "Computer vision system for automated barcode verification in production lines using advanced image processing.",
+      link: "https://github.com/HamzAlaydi/production_line_barcode_verifier.git",
+    },
   ];
 
   const filteredProjects =
@@ -97,6 +147,9 @@ const PortfolioSection = () => {
     { id: "web", label: "Web Applications" },
     { id: "mobile", label: "Mobile Apps" },
     { id: "enterprise", label: "Enterprise Solutions" },
+    { id: "iot", label: "IoT & PLC" },
+    { id: "cms", label: "CMS" },
+    { id: "vision", label: "Computer Vision" },
   ];
 
   return (
@@ -164,7 +217,15 @@ const PortfolioSection = () => {
                     ? "Web Application"
                     : project.category === "mobile"
                     ? "Mobile App"
-                    : "Enterprise Solution"}
+                    : project.category === "enterprise"
+                    ? "Enterprise Solution"
+                    : project.category === "iot"
+                    ? "IoT & PLC"
+                    : project.category === "cms"
+                    ? "CMS"
+                    : project.category === "vision"
+                    ? "Computer Vision"
+                    : "Other"}
                 </p>
                 <p className="description">{project.description}</p>
                 <div className="portfolio-links">
