@@ -1,15 +1,16 @@
 // App.jsx
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaCode, FaLaptopCode, FaMobileAlt, FaBrain, FaRocket } from 'react-icons/fa';
 import './App.css';
 import HeroSection from './components/HeroSection';
+import AboutSection from './components/AboutSection';
 import ServicesSection from './components/ServicesSection';
 import PortfolioSection from './components/PortfolioSection';
 import ContactSection from './components/ContactSection';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ParticlesBackground from './components/ParticlesBackground';
+import WhatsAppButton from './components/WhatsAppButton';
 import { AnimatePresence } from 'framer-motion';
 
 function App() {
@@ -17,7 +18,6 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate loading
     const timer = setTimeout(() => {
       setLoading(false);
     }, 2000);
@@ -40,13 +40,16 @@ function App() {
           initial={{ scale: 0 }}
           animate={{ scale: [0, 1.2, 1] }}
           transition={{ duration: 1.5 }}
-          className="loading-logo"
+          className="text-center"
         >
-          <h1>Grow</h1>
+          <h1 className="text-4xl sm:text-5xl font-extrabold mb-4">
+            <span className="text-gradient">Grow</span>
+          </h1>
           <motion.div
-            className="loading-bar"
+            className="loading-bar h-1 mx-auto rounded-full"
+            style={{ maxWidth: '200px' }}
             initial={{ width: 0 }}
-            animate={{ width: '100%' }}
+            animate={{ width: '200px' }}
             transition={{ duration: 1.5 }}
           />
         </motion.div>
@@ -62,6 +65,7 @@ function App() {
       <AnimatePresence>
         <main>
           <HeroSection />
+          <AboutSection />
           <ServicesSection />
           <PortfolioSection />
           <ContactSection />
@@ -69,6 +73,7 @@ function App() {
       </AnimatePresence>
       
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 }
